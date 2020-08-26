@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <button class="btnPokemon" id="aboutMe" type="button">About Me</button>
+        <button class="btnPokemon" id="backToPokedex" type="button">Back to Pokedex</button>
+    </nav>
+</header>
+    <div class="containerAbout hidden" id="containerAbout">
+        <h2 class="h2Title">Alejandro Diaz Hernandez</h2>
+        <p class="pAbout">Captura la Api!</p>
+    </div>
+    <div class="container" id="container">
+        <div class="container-color">
+            <div class="container__title">
+                <h1>Pokedex</h1>
+            </div>
+            <div class="container__pokemon">
+                <div role="button" id="pokeList" class="container__pokemon-pokeball">
+                    <img class="img-pokeball" src="src/app/assets/pikachuBall.png" alt="pokeball">
+                    <button class="btnPokemon">Pokemon List</button>
+                </div>
+                
+                <div role="button" id="pokeRandom" class="container__pokemon-pokeball">
+                    <img class="img-pokeball2" src="src/app/assets/pokeballRandom.jpg" alt="pokeball">
+                    <button class="btnPokemon">Random Pokemon</button>
+                </div>
+                
+            </div>
+
+            <div class="container__finder">
+                <div class="container__find">
+                    <p>Poke Finder</p>
+                    <input id="pokeName" class="find">
+                    <button class="find-button" id="pokeFind">Go!</button>
+                </div>
+            </div>
+        </div>
+        <div class="container__list">
+            <ul id="pokedex" class="flex-container wrap list"></ul>
+        </div>
+    </div>
+    <footer class="footer">
+
+    </footer>
+
+
+</body>
+</html>
